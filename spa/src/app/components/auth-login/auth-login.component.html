@@ -1,0 +1,9 @@
+<form class="login-form" (ngSubmit)="login()">
+      <input matInput type="text" [(ngModel)]="username" name="username" placeholder="Usuario" required>
+      <input matInput type="password" [(ngModel)]="password" name="password" placeholder="Contraseña" required>
+    <button mat-raised-button color="primary" type="submit">Iniciar Sesión</button>
+    <h6 style="color: rgb(146, 22, 22);" [textContent]="m"></h6>
+    <br>
+    <a (click)="router.navigate(['/register'])">O registrate aquí</a>
+</form>
+  

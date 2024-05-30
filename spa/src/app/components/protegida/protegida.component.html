@@ -1,0 +1,17 @@
+<h1>Perfil del usuario</h1>
+ <hr>
+    <pre *ngIf="authService.isLoggedIn()">
+    <code>
+        Email: {{authService.getUserInfoFromToken()?.email}}
+        Nombre: {{authService.getUserInfoFromToken()?.username}}
+    </code>
+    </pre>
+<!--
+<h1>Perfil del usuario</h1>
+ <hr>
+    <pre *ngIf="auth.user$ | async as profile">
+    <code>
+        {{profile | json}}
+    </code>
+ </pre>
+ -->
